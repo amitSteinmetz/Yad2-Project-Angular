@@ -1,0 +1,23 @@
+.category-items {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  direction: rtl;
+  background-color: white;
+  list-style: none;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 22px;
+  min-width: 350px;
+
+  .category-items-column {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  // .category-items-column li {
+  //     margin: 11px;
+  // }
+}

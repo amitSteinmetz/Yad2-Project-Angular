@@ -7,17 +7,117 @@
     />
   </div>
 
-    <ul class="categories">
-      <li class="category gray-background"><a>נדל"ן</a></li>
-      <li class="category gray-background"><a>דירות חדשות</a></li>
-      <li class="category gray-background"><a>רכב</a></li>
-      <li class="category gray-background"><a>יד שנייה</a></li>
-      <li class="category gray-background"><a>דרושים IL</a></li>
-      <li class="category gray-background"><a>עסקים למכירה</a></li>
-      <li class="category gray-background"><a>חיות מחמד</a></li>
-      <li class="category gray-background"><a>בעלי מקצוע</a></li>
-    </ul>
-  
+  <ul class="categories">
+    <!-- <li
+      class="category gray-background"
+      #realEstate
+      id="realEstate"
+      (mouseenter)="onMouseEnterCategory(realEstate.id)"
+      (mouseleave)="onMouseLeaveCategory(realEstate.id)"
+    > -->
+    <li
+    class="category gray-background"
+    #realEstate
+    id="realEstate"
+    (mouseenter)="onMouseEnterCategory(realEstate.id)"
+  >
+      <a>נדל"ן</a>
+      <app-category-modal
+        *ngIf="activeCategory.realEstate"
+        [chosenCategory]="'realEstate'"
+      ></app-category-modal>
+    </li>
+
+    <li
+      class="category gray-background"
+      #newApartmants
+      id="newApartmants"
+      (mouseenter)="onMouseEnterCategory(newApartmants.id)"
+      (mouseleave)="onMouseLeaveCategory(newApartmants.id)"
+    >
+      <a>דירות חדשות</a>
+      <app-category-modal
+        *ngIf="activeCategory.newApartmants"
+      ></app-category-modal>
+    </li>
+
+    <li
+      class="category gray-background"
+      #vehicles
+      id="vehicles"
+      (mouseenter)="onMouseEnterCategory(vehicles.id)"
+      (mouseleave)="onMouseLeaveCategory(vehicles.id)"
+    >
+      <a>רכב</a>
+      <app-category-modal
+        *ngIf="activeCategory.vehicles"
+        [chosenCategory]="'vehicles'"
+      ></app-category-modal>
+    </li>
+    <li
+      class="category gray-background"
+      #yad2
+      id="yad2"
+      (mouseenter)="onMouseEnterCategory(yad2.id)"
+      (mouseleave)="onMouseLeaveCategory(yad2.id)"
+    >
+      <a>יד שנייה</a>
+      <app-category-modal *ngIf="activeCategory.yad2"></app-category-modal>
+    </li>
+    <li
+      class="category gray-background"
+      #needed
+      id="needed"
+      (mouseenter)="onMouseEnterCategory(needed.id)"
+      (mouseleave)="onMouseLeaveCategory(needed.id)"
+    >
+      <a>דרושים IL</a>
+      <app-category-modal
+        *ngIf="activeCategory.needed"
+        [chosenCategory]="'needed'"
+      ></app-category-modal>
+    </li>
+    <li
+      class="category gray-background"
+      #business
+      id="business"
+      (mouseenter)="onMouseEnterCategory(business.id)"
+      (mouseleave)="onMouseLeaveCategory(business.id)"
+    >
+      <a>עסקים למכירה</a>
+      <app-category-modal
+        *ngIf="activeCategory.business"
+        [chosenCategory]="'business'"
+      ></app-category-modal>
+    </li>
+    <li
+      class="category gray-background"
+      #pets
+      id="pets"
+      (mouseenter)="onMouseEnterCategory(pets.id)"
+      (mouseleave)="onMouseLeaveCategory(pets.id)"
+    >
+      <a>חיות מחמד</a>
+      <app-category-modal
+        *ngIf="activeCategory.pets"
+        [chosenCategory]="'pets'"
+      ></app-category-modal>
+    </li>
+    <li
+      class="category gray-background"
+      #jobs
+      id="jobs"
+      (mouseenter)="onMouseEnterCategory(jobs.id)"
+      (mouseleave)="onMouseLeaveCategory(jobs.id)"
+    >
+      <a>בעלי מקצוע</a>
+      <app-category-modal
+        *ngIf="activeCategory.jobs"
+        [chosenCategory]="'jobs'"
+      ></app-category-modal>
+    </li>
+  </ul>
+
   <div class="svg-links">
     <div class="mobile-right-links">
       <a class="menu-link svg-link">
