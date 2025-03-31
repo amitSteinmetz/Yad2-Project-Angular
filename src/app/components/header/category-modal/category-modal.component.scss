@@ -1,3 +1,7 @@
+.container {
+  opacity: 0.96;
+}
+
 .category-items {
   position: absolute;
   top: 64px;
@@ -8,16 +12,50 @@
   padding: 25px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   display: flex;
-  gap: 22px;
-  min-width: 350px;
+  gap: 11px;
+  min-width: 225px;
 
   .category-items-column {
     display: flex;
     flex-direction: column;
     gap: 11px;
-  }
 
-  // .category-items-column li {
-  //     margin: 11px;
-  // }
+    .category-item {
+      min-width: 150px;
+      width: max-content;
+      display: flex;
+      align-items: center;
+      line-height: 1.5625rem;
+
+      svg {
+        margin-left: 2px;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.new-tag {
+  padding: 0 4px;
+  width: 28px;
+  line-height: 1rem;
+  margin-right: 8px;
+  border-radius: 4px;
+  background-color: rgb(16, 173, 111);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.azure {
+  color: rgb(4, 149, 255);
+}
+
+.category-item:hover {
+  color: rgb(255, 113, 0);
+}
+
+.category-items-column .azure:hover {
+  color: rgb(0, 99, 170);
 }

@@ -8,19 +8,13 @@
   </div>
 
   <ul class="categories">
-    <!-- <li
+    <li
       class="category gray-background"
       #realEstate
       id="realEstate"
       (mouseenter)="onMouseEnterCategory(realEstate.id)"
       (mouseleave)="onMouseLeaveCategory(realEstate.id)"
-    > -->
-    <li
-    class="category gray-background"
-    #realEstate
-    id="realEstate"
-    (mouseenter)="onMouseEnterCategory(realEstate.id)"
-  >
+    >
       <a>נדל"ן</a>
       <app-category-modal
         *ngIf="activeCategory.realEstate"

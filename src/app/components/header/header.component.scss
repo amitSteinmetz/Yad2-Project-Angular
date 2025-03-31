@@ -4,7 +4,7 @@
   width: 100vw;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   font-family: "Rubik", sans-serif;
-  position: fixed;
+  position: sticky;
 
   @media (min-width: 880px) {
     height: auto;
@@ -20,20 +20,19 @@
   align-items: center;
   flex-wrap: wrap;
   color: rgb(54, 54, 54);
+  opacity: 0.96;
 
   .logo-img-container {
     position: absolute;
     top: 0;
+    right: 50%;
     z-index: 0;
-    width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     cursor: pointer;
 
     .logo-img {
-      margin-left: -20px;
       width: 50px;
     }
   }
@@ -81,7 +80,7 @@
     }
 
     svg {
-      min-height: 45px;
+      min-height: 41px;
       width: 1.5rem;
       height: 1.5rem;
     }
