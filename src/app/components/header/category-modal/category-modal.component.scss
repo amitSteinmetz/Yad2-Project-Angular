@@ -1,11 +1,12 @@
 .container {
   opacity: 0.96;
-}
-
-.category-items {
+  z-index: 10;
   position: absolute;
   top: 64px;
   right: 0;
+}
+
+.category-items {
   direction: rtl;
   background-color: white;
   list-style: none;
