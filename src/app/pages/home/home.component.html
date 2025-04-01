@@ -1,0 +1,27 @@
+<div class="slide-images-container">
+    <div class="img-div" *ngFor="let slideImg of slideImages, let i = index">
+        <img class="slide-image" *ngIf="activeSlideImgIndex === i"  src={{slideImg}} alt="">
+        <button class="switch-img-button" [ngClass]="'btn-position-' + i"></button>
+    </div>    
+</div>
+
+<app-categories></app-categories>
+
+<!-- <div class="slide-images-container">
+    <div *ngFor="let slideImg of slideImages, let i = index">
+        <img class="slide-image" *ngIf="activeSlideImgIndex === i"  src={{slideImg}} alt="">
+    </div>
+
+    <div class="switch-img-buttons">
+        <button class="switch-img-button"></button>
+        <button class="switch-img-button"> </button>
+        <button class="switch-img-button"></button>
+    </div>
+</div> -->
+
+
+
+
+
+
+
