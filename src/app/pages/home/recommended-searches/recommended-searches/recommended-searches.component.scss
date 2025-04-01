@@ -1,0 +1,84 @@
+:host {
+  display: block;
+  margin-top: 2rem;
+  font-family: "Rubik", sans-serif;
+  color: #363636;
+
+  @media (min-width: 881px) {
+    margin-top: 4rem;
+  }
+}
+
+.recommended-searches-title {
+  margin: 0 12px 1rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.recommended-searches-container {
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+  .recommended-searches {
+    display: flex;
+    min-width: max-content;
+    justify-content: space-between;
+    gap: 12px;
+    height: 160px;
+    margin: 0 12px;
+
+    .search-item {
+      display: flex;
+      flex-direction: column;
+      width: 169px;
+      border-radius: 8px;
+      border: 1px solid rgb(238, 238, 238);
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06);
+
+      .item-svg {
+        width: 100%;
+        height: 95px;
+      }
+
+      .search-item-text {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 0.75rem;
+        padding: 0 5px;
+      }
+    }
+
+    .search-item:hover {
+      border: 1px solid rgb(220, 220, 220);
+      box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.09);
+    }
+  }
+}
+
+@media (min-width: 881px) {
+  .recommended-searches-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .recommended-searches-container {
+    .recommended-searches {
+      height: 236px;
+      margin: 0;
+
+      .search-item {
+        width: 290px;
+
+        .item-svg {
+          height: 150px;
+        }
+
+        .search-item-text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
