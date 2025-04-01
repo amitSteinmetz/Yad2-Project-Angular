@@ -1,10 +1,11 @@
 import { Component,  Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CategoriesComponent } from "./categories/categories.component";
+import { PopularServicesComponent } from "./popular-services/popular-services/popular-services.component";
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, CategoriesComponent],
+  imports: [CommonModule, CategoriesComponent, PopularServicesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
