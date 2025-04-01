@@ -7,76 +7,103 @@
 .slide-images-container {
     position: relative;
 
-    .slide-image {
-        cursor: pointer;
-        width: 100%;
-        max-width: 100%;
-        border-radius: 10px;
-    }
+    .slide-img-div {
+        overflow: hidden;
 
-    .switch-img-buttons {
-        position: absolute;
-        bottom: 8px;
-        right: 20px;
-        display: flex;
-        gap: 15px;
-        
+        .slide-image {
+            // animation: slide-right 0.6s ease-in-out;
+            cursor: pointer;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    
         .switch-img-button {
+            position: absolute;
             border-radius: 50%;
             border: 1px solid #ff7100;
             height: 8px;
             width: 8px;
             padding: 0;
             cursor: pointer;
+        }
+
+        .active-btn {
+            background-color: #ff7100;
+        }
+
+        .btn-position-0 {
+            bottom: 8px;
+            right: 20px;
+        }
+        .btn-position-1 {
+            bottom: 8px;
+            right: 40px;
+        }
+        .btn-position-2 {
+            bottom: 8px;
+            right: 60px;
         }
     }
 }
 
+.slide-right {
+    animation: slide-right 0.6s ease-in-out;
+}
+.slide-left{
+    animation: slide-left 0.6s ease-in-out;
+}
+
+.generic-ad {
+    margin-top: 2rem;
+    width: 100%;
+}
+
 @media (min-width: 881px) {
-    // .slide-images-container {
-    //     .switch-img-buttons {
-    //         bottom: 24px;
-    //         right: 48px;
-    //     }
-    // }
-
-    .slide-images-container div {
-        position: relative;
-
-        .switch-img-button {
-            border-radius: 50%;
-            border: 1px solid #ff7100;
-            height: 8px;
-            width: 8px;
-            padding: 0;
-            cursor: pointer;
-        }
-
+    .slide-images-container .slide-img-div {
         .btn-position-0 {
             bottom: 24px;
             right: 48px;
         }
         .btn-position-1 {
             bottom: 24px;
-            right: 54px;
+            right: 68px;
         }
         .btn-position-2 {
             bottom: 24px;
-            right: 60px;
+            right: 88px;
         }
     }
 
+    .generic-ad {
+        margin-top: 4rem;
+    }
 }
 
 @media (max-width: 600px) {
-    .slide-images-container {
-        .switch-img-buttons {
-            gap: 8px;
-
-            .switch-img-button {
-                height: 6px;
-                width: 6px;
-            }
+    .slide-images-container .slide-img-div {
+        .switch-img-button {
+            height: 6px;
+            width: 6px;
         }
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
     }
 }

@@ -16,10 +16,13 @@ export class HomeComponent {
   ]
   activeSlideImgIndex = 0;
   
-
   constructor() {
     // setInterval(() => {
     //   this.activeSlideImgIndex = (this.activeSlideImgIndex + 1) % this.slideImages.length;
-    // }, 2000)
+    // }, 4000)
+  }
+
+  onSlideImgButtonClicked(i) {
+    this.activeSlideImgIndex = i;
   }
 }
