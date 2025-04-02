@@ -1,0 +1,98 @@
+:host {
+  display: block;
+  margin-top: 2rem;
+  font-family: "Rubik", sans-serif;
+  color: #363636;
+
+  @media (min-width: 881px) {
+    margin-top: 4rem;
+  }
+}
+
+.find-job-tools-title {
+  margin: 0 12px 1rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.find-job-tools-container {
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+  .find-job-tools {
+    display: flex;
+    min-width: max-content;
+    justify-content: space-between;
+    gap: 12px;
+    height: 160px;
+    margin: 0 12px;
+
+    .find-job-tool {
+      display: flex;
+      flex-direction: column;
+      width: 169px;
+      border-radius: 8px;
+      border: 1px solid rgb(238, 238, 238);
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06);
+
+      .tool-svg {
+        width: 100%;
+        height: 95px;
+      }
+
+      .find-job-tool-text {
+        padding: 8px;
+
+        .find-job-tool-title,
+        .find-job-tool-subtitle {
+          font-size: 0.75rem;
+        }
+
+        .find-job-tool-subtitle {
+          margin-top: 4px;
+        }
+      }
+    }
+
+    .find-job-tool:hover {
+      border: 1px solid rgb(220, 220, 220);
+      box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.09);
+    }
+  }
+}
+
+@media (min-width: 881px) {
+  .find-job-tools-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .find-job-tools-container {
+    .find-job-tools {
+      height: 236px;
+      margin: 0;
+
+      .find-job-tool {
+        width: 290px;
+
+        .tool-svg {
+          height: 150px;
+        }
+
+        .find-job-tool-text {
+          padding: 12px 10px;
+
+          .find-job-tool-title {
+            font-size: 1rem;
+          }
+
+          .find-job-tool-subtitle {
+            font-size: 0.875rem;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
