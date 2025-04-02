@@ -1,0 +1,161 @@
+<div [ngSwitch]="chosenCategory">
+  <div *ngSwitchCase="'realEstate'" class="info-container">
+    <section class="info-section">
+      <h3 class="info-section-title">קטגוריות</h3>
+
+      <ul class="info-items">
+        <li class="info-item">דירות למכירה</li>
+        <li class="info-item">דירות להשכרה</li>
+        <li class="info-item">מסחרי</li>
+        <li class="info-item">דירות יד1</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <h3 class="info-section-title">שירותים</h3>
+
+      <ul class="info-items">
+        <li class="info-item">חיפוש על גבי מפה</li>
+        <li class="info-item">כונס נכסים</li>
+        <li class="info-item">הערכת שווי נכס</li>
+        <li class="info-item">משרדי תיווך בישראל</li>
+        <li class="info-item">יד2 ביטוח דירה</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <h3 class="info-section-title">בעלי מקצוע</h3>
+
+      <ul class="info-items">
+        <li class="info-item">שמאי מקרקעין</li>
+        <li class="info-item">חומרי בניין</li>
+        <li class="info-item">אינסטלטור</li>
+        <li class="info-item">חשמלאים</li>
+        <li class="info-item">שיפוצים</li>
+        <li class="info-item">הובלות</li>
+        <li class="info-item">רהיטים</li>
+        <li class="info-item">עו"ד מקרקעין</li>
+      </ul>
+    </section>
+  </div>
+
+  <div *ngSwitchCase="'cars'" class="info-container">
+    <section class="info-section">
+      <h3 class="info-section-title">יצרני רכב מובילים</h3>
+
+      <ul class="info-items">
+        <li class="info-item">טויוטה</li>
+        <li class="info-item">יונדאי</li>
+        <li class="info-item">מרצדס</li>
+        <li class="info-item">סקודה</li>
+        <li class="info-item">קיה</li>
+        <li class="info-item">מאזדה</li>
+        <li class="info-item">מיצובישי</li>
+        <li class="info-item">סוזוקי</li>
+        <li class="info-item">פלקסוואגן</li>
+        <li class="info-item">אאודי</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <h3 class="info-section-title">סוגי רכבים מובילים</h3>
+
+      <ul class="info-items">
+        <li class="info-item">רכבים משפחתיים</li>
+        <li class="info-item">ג'יפים</li>
+        <li class="info-item">רכבים קטנים</li>
+        <li class="info-item">רכבי מנהלים</li>
+        <li class="info-item">רכבים מסחריים</li>
+        <li class="info-item">רכבי יוקרה</li>
+        <li class="info-item">קרוסאוברים</li>
+        <li class="info-item">טנדרים</li>
+        <li class="info-item">מיניוואנים</li>
+        <li class="info-item">רכבי ספורט</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <h3 class="info-section-title">שירותים</h3>
+
+      <ul class="info-items">
+        <li class="info-item">מימון רכב</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <h3 class="info-section-title">בעלי מקצוע</h3>
+
+      <ul class="info-items">
+        <li class="info-item">חשמלאי רכב</li>
+        <li class="info-item">לימודי נהיגה</li>
+        <li class="info-item">רחיצת רכב</li>
+        <li class="info-item">גרירת רכב</li>
+        <li class="info-item">אביזרים לרכב</li>
+        <li class="info-item">בדיקה ורישוי</li>
+      </ul>
+    </section>
+  </div>
+
+  <div *ngSwitchCase="'yad2'" class="info-container">
+    <section class="info-section">
+      <h3 class="info-section-title">קטגוריות</h3>
+
+      <ul class="info-items">
+        <li class="info-item">ריהוט</li>
+        <li class="info-item">סלולרי</li>
+        <li class="info-item">מוצרי חשמל</li>
+        <li class="info-item">קונסולות משחק</li>
+        <li class="info-item">מחשבים וציוד נלווה</li>
+        <li class="info-item">ספורט</li>
+        <li class="info-item">לגינה</li>
+        <li class="info-item">עסקים למכירה</li>
+        <li class="info-item">הכל בחינם!</li>
+        <li class="info-item">לתינוק ולילד</li>
+        <li class="info-item">אופנה וטיפוח</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <h3 class="info-section-title">בעלי מקצוע</h3>
+
+      <ul class="info-items">
+        <li class="info-item">רופאי שיניים</li>
+        <li class="info-item">ניקיון ואחזקה</li>
+        <li class="info-item">פרחים</li>
+        <li class="info-item">מנעולן</li>
+        <li class="info-item">סוכני ביטוח</li>
+        <li class="info-item">תכשיטים</li>
+      </ul>
+    </section>
+  </div>
+
+  <div *ngSwitchCase="'needed'" class="info-container">
+    <section class="info-section">
+      <ul class="info-items">
+        <li class="info-item">כל המשרות</li>
+        <li class="info-item">הייטק</li>
+        <li class="info-item">כספים</li>
+        <li class="info-item">מכירות</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <ul class="info-items">
+        <li class="info-item">כללי</li>
+        <li class="info-item">עורכי דין</li>
+        <li class="info-item">משאבי אנוש</li>
+        <li class="info-item">לוגיסטיקה/שילוח</li>
+        <li class="info-item">מדעים/ביוטק</li>
+        <li class="info-item">שיווק</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <ul class="info-items">
+        <li class="info-item">שירות לקוחות</li>
+        <li class="info-item">עבודה מהבית</li>
+        <li class="info-item">אינטרנט</li>
+      </ul>
+    </section>
+  </div>
+</div>

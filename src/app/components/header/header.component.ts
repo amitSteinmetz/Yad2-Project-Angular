@@ -19,10 +19,8 @@ export class HeaderComponent {
     pets: false,
     jobs: false
    }
-   @Output() category_hovered: EventEmitter<void> = new EventEmitter();
 
    onMouseEnterCategory(category) {
-    this.category_hovered.emit();
     this.activeCategory[category] = true;
    }
    onMouseLeaveCategory(category) {

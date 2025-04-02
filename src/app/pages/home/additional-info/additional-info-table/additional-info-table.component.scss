@@ -1,0 +1,44 @@
+:host {
+  display: block;
+  margin: 20px 5px 0;
+}
+
+.info-container {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+  .info-section {
+    .info-section-title {
+      margin-bottom: 15px;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .info-items {
+      display: flex;
+      flex-direction: column;
+      max-height: 284px;
+      flex-wrap: wrap;
+      width: max-content;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      padding-left: 70px;
+
+      .info-item {
+        width: max-content;
+        font-size: 0.875rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 881px) {
+  .info-container {
+    .info-section .info-items {
+      max-height: 200px;
+    }
+  }
+}

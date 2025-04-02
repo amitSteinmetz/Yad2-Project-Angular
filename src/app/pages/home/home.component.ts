@@ -4,11 +4,13 @@ import { CategoriesComponent } from "./categories/categories.component";
 import { PopularServicesComponent } from "./popular-services/popular-services/popular-services.component";
 import { RecommendedSearchesComponent } from "./recommended-searches/recommended-searches/recommended-searches.component";
 import { FindJobToolsComponent } from "./find-job-tools/find-job-tools/find-job-tools.component";
-import { BusinessComponent } from "./business/business/business.component";
+import { BusinessComponent } from "./business/business.component";
+import { AdditionalInfoComponent } from "./additional-info/additional-info.component";
+import { ContactUsComponent } from "./contact-us/contact-us.component";
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, CategoriesComponent, PopularServicesComponent, RecommendedSearchesComponent, FindJobToolsComponent, BusinessComponent],
+  imports: [CommonModule, CategoriesComponent, PopularServicesComponent, RecommendedSearchesComponent, FindJobToolsComponent, BusinessComponent, AdditionalInfoComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
