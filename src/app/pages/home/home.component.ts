@@ -10,7 +10,7 @@ import { ContactUsComponent } from "./contact-us/contact-us.component";
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, CategoriesComponent, PopularServicesComponent, RecommendedSearchesComponent, FindJobToolsComponent, BusinessComponent, AdditionalInfoComponent],
+  imports: [CommonModule, CategoriesComponent, PopularServicesComponent, RecommendedSearchesComponent, FindJobToolsComponent, BusinessComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

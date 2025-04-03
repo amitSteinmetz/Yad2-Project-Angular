@@ -1,7 +1,7 @@
-<h3 class="additional-info-title">עוד באתר</h3>
-
 <div class="info-contact-box">
   <div class="additional-info-box">
+    <h3 class="additional-info-title">עוד באתר</h3>
+
     <div class="additional-info-buttons">
       <button
         (click)="onCategoryButtonClicked('realEstate')"
@@ -10,7 +10,7 @@
       >
         נדלן
       </button>
-  
+
       <button
         (click)="onCategoryButtonClicked('cars')"
         class="additional-info-btn"
@@ -18,7 +18,7 @@
       >
         רכב
       </button>
-  
+
       <button
         (click)="onCategoryButtonClicked('yad2')"
         class="additional-info-btn"
@@ -26,7 +26,7 @@
       >
         יד שנייה
       </button>
-  
+
       <button
         (click)="onCategoryButtonClicked('needed')"
         class="additional-info-btn"
@@ -35,7 +35,7 @@
         דרושים IL
       </button>
     </div>
-  
+
     <app-additional-info-table
       [chosenCategory]="activeCategory"
     ></app-additional-info-table>
@@ -43,4 +43,3 @@
 
   <app-contact-us></app-contact-us>
 </div>
-
