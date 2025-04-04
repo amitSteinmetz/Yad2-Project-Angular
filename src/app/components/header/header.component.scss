@@ -4,7 +4,9 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   font-family: "Rubik", sans-serif;
   position: sticky;
+  top: 0;
   z-index: 1000;
+  background-color: white;
 
   @media (min-width: 880px) {
     height: auto;
@@ -20,7 +22,6 @@
   align-items: center;
   flex-wrap: wrap;
   color: rgb(54, 54, 54);
-  opacity: 0.96;
 
   .logo-img-container {
     position: absolute;
