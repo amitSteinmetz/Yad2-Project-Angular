@@ -1,24 +1,25 @@
 <div class="slide-images-container">
-  <div
-    class="slide-img-div"
-    *ngFor="let slideImg of slideImages; let i = index"
-  >
-    <img
-      [ngClass]="i === 0 ? 'slide-left' : 'slide-right'"
-      class="slide-image"
-      *ngIf="activeSlideImgIndex === i"
-      src="{{ slideImg }}"
-      alt=""
-    />
-
-    <button
-      class="switch-img-button"
-      (click)="onSlideImgButtonClicked(i)"
-      [ngClass]="[
-        'btn-position-' + i,
-        activeSlideImgIndex === i ? 'active-btn' : ''
-      ]"
-    ></button>
+  <div class="slide-image-container">
+    <div
+      class="slide-img-div"
+      *ngFor="let slideImg of slideImages; let i = index">
+      <img
+        [ngClass]="i === 0 ? 'slide-left' : 'slide-right'"
+        class="slide-image"
+        *ngIf="activeSlideImgIndex === i"
+        src="{{ slideImg }}"
+        alt=""
+      />
+  
+      <button
+        class="switch-img-button"
+        (click)="onSlideImgButtonClicked(i)"
+        [ngClass]="[
+          'btn-position-' + i,
+          activeSlideImgIndex === i ? 'active-btn' : ''
+        ]"
+      ></button>
+    </div>
   </div>
 </div>
 
@@ -32,3 +33,5 @@
 <app-recommended-searches></app-recommended-searches>
 <app-find-job-tools></app-find-job-tools>
 <app-business></app-business>
+<app-additional-info></app-additional-info>
+
