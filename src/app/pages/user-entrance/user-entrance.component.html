@@ -1,0 +1,132 @@
+<div class="container">
+  <div class="logo-container">
+    <img src="https://assets.yad2.co.il/login/logo.svg" alt="logo" />
+  </div>
+
+  <div class="page-sections">
+    <section class="user-entrance-section">
+      <h2 class="user-entrance-title">היי, טוב לראות אותך</h2>
+
+      <form class="user-entrance-form">
+        <div class="form-group">
+          <label for="email">מייל</label>
+          <input type="email" placeholder="yourmail@email.co.il" required />
+        </div>
+        <div class="form-group">
+          <label class="last-label" for="password">סיסמה</label>
+          <input type="password" placeholder="הקלדת סיסמה" required />
+        </div>
+
+        <div class="forgot-password-container">
+          <a class="forgot-password">שכחתי סיסמה</a>
+        </div>
+
+        <button type="submit" class="form-button">התחברות</button>
+      </form>
+
+      <div class="another-entrance-title">או התחברו דרך</div>
+
+      <div class="social-login-buttons">
+        <button class="social-login-button">
+          <svg
+            width="26px"
+            height="26px"
+            viewBox="0 0 26 26"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>google</title>
+            <g
+              id="google"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g
+                id="icons8-google"
+                transform="translate(4.000000, 4.000000)"
+                fill-rule="nonzero"
+              >
+                <path
+                  d="M17.82495,7.23735 L17.1,7.23735 L17.1,7.2 L9,7.2 L9,10.8 L14.08635,10.8 C13.3443,12.89565 11.35035,14.4 9,14.4 C6.01785,14.4 3.6,11.98215 3.6,9 C3.6,6.01785 6.01785,3.6 9,3.6 C10.37655,3.6 11.6289,4.1193 12.58245,4.96755 L15.1281,2.4219 C13.5207,0.92385 11.3706,0 9,0 C4.02975,0 0,4.02975 0,9 C0,13.97025 4.02975,18 9,18 C13.97025,18 18,13.97025 18,9 C18,8.39655 17.9379,7.8075 17.82495,7.23735 Z"
+                  id="Path"
+                  fill="#FFC107"
+                ></path>
+                <path
+                  d="M1.0377,4.81095 L3.99465,6.9795 C4.79475,4.9986 6.73245,3.6 9,3.6 C10.37655,3.6 11.6289,4.1193 12.58245,4.96755 L15.1281,2.4219 C13.5207,0.92385 11.3706,0 9,0 C5.5431,0 2.5452,1.95165 1.0377,4.81095 Z"
+                  id="Path"
+                  fill="#FF3D00"
+                ></path>
+                <path
+                  d="M9,18 C11.3247,18 13.437,17.11035 15.03405,15.6636 L12.24855,13.3065 C11.34495,13.99095 10.22175,14.4 9,14.4 C6.6591,14.4 4.67145,12.90735 3.92265,10.8243 L0.98775,13.08555 C2.47725,16.0002 5.50215,18 9,18 Z"
+                  id="Path"
+                  fill="#4CAF50"
+                ></path>
+                <path
+                  d="M17.82495,7.23735 L17.1,7.23735 L17.1,7.2 L9,7.2 L9,10.8 L14.08635,10.8 C13.72995,11.80665 13.0824,12.6747 12.2472,13.30695 C12.24765,13.3065 12.2481,13.3065 12.24855,13.30605 L15.03405,15.66315 C14.83695,15.84225 18,13.5 18,9 C18,8.39655 17.9379,7.8075 17.82495,7.23735 Z"
+                  id="Path"
+                  fill="#1976D2"
+                ></path>
+              </g>
+            </g>
+          </svg>
+
+          <span class="social-name">גוגל</span>
+        </button>
+
+        <button class="social-login-button">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU7V53///8gRZUyUZrn6vKKl785VZxAW6Dh5O5yg7QmSZbR1uUxUJojR5Y2U5vx8vdbcKqyutSXosVidq3a3urM0uPCyd6ps9B7i7n09vrx9Pm4wNikrs1MZKRYbqp/j7tqfbGapsiPnMIAMY0VP5JdM9iBAAAD+UlEQVR4nO3dbVOjMBSG4fDSUEISXtRatta67v7/37hF7eiMs5iKyTmHee4Zx08i13RIhACq7K1mqCu1lqp6aC4w9fqtr5z1mnrHfiztrav6D8K2M+vRXdKmay/CsiiodydKRVG+ClvrqfclUt62L8JunZ/gVNFNwt5Q70fETH8WVusbZN7TVaYaR70XUXONGiz1TkTNDqpe60D6mq/Vqg/D6UCk3gOEEEIIIYQQQgghhMjz1hr3ofz8ZZwxxlpbFFr2NUJ9tvmbzf2u2ZbjmGXZOI6/2rLc3jZ3u0P/MGz2N0dtnZPJ9NYdN7sy+7p2q+QRtc0f70N0b0vY0tLGDuE8eUJtdH8NT5zQ2vsrfbKEOj+NVwMlCQvffO2RLDRP3/EJEubD94BihPm1Q6g0Yb77LlCIcAFQhtBdPwvKEprNAqAEoX9cAhQg1KZdudB9e54QIvTdMiB/Yb5dubA4LQSyF7qrzucFCpd/hNyFi49C7kK9dCBlLzSH1QuXA3kLi/3ahWbBaaEMoVv2Nzd/4cLTJgFC+3ydpd3eNp+65bz2dMVhOB5ORzstjX6OMVC50D9otntnJK74ahsIHHKhDw/qYxjwRuyzg0UdBKzlPncWNpQeBD86GLYaKvQQfCnoxOIg9iA8Z+4ChE+Sn410IUu+Vt4s+F7IhL8VPM6ECXeSD0OVB1xIvJc7Gaow4e/VC59XL9xInvAhhFBAEELIPwgh5B+EEPIPQgj5ByGE/INQhlD/vzChndnCy1aoq2YyIUI9t4UpWqMPW+VdUkl72T9wHXtJd6sX9rQXxRMIid+fm0C4p51OEggfaVfBEwiJl/njC0fiVfD4Qup1/vhC6nX++ELqdf74QupV8PhC6lum4guPxKdP8YXUd3lHF7bUN4VFF96uXkg9HcYXPlDfMhVdSH4pLrrwhvoO4uhC8v+uEls4Ug800YUl9WQRXdis/jOkfxgjtpD+HunYwj31ZBFd2FFPFtGF1L7oQvrpMLaQ+lJifCHxytqUfyq3MwUg5n6+JD93mohupj8Bq9ynvzMbYACcbx33YswFIYT8gxBC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPmXUEj01rNUQl2pmuZlRKmEvlZE76ZPJbSDamjeZJNK6BpF9PrBREJdZSrrSV7Wk0ho+rMw6yimnTTCossmYWsJhtMkQm/bF2FW2vSfYgphYadfMgmztkv+auz4Qm26NrsIs6yvnPUplXGF2ltX9a9bUZfNNUNd/SThi+IKq3poLlv5B3kiS8fmdy97AAAAAElFTkSuQmCC"
+              alt=""
+            />
+            <span class="social-name">פייסבוק</span>
+          </button>
+      </div>
+
+      <div class="register-message">
+        <span>אין לך חשבון?</span>
+        <a>להרשמה</a>
+      </div>
+    </section>
+
+    <section class="marketing-section">
+      <h1 class="marketing-title">
+        <span>לקנות מהר, למכור מהר.</span><br /><span
+          >ויש לנו אחלה כלים לזה.</span
+        ><br />
+      </h1>
+
+      <ul class="marketing-features">
+        <li class="marketing-feature">
+          <img
+            class="marketing-feature-image"
+            src="https://assets.yad2.co.il/login/icon_alert.svg"
+            alt=""
+          /><span class="marketing-feature-text">התראות</span>
+        </li>
+        <li class="marketing-feature">
+          <img
+            class="marketing-feature-image"
+            src="https://assets.yad2.co.il/login/icon_chat.svg"
+            alt=""
+          /><span class="marketing-feature-text">צ׳אט</span>
+        </li>
+        <li class="marketing-feature">
+          <img
+            class="marketing-feature-image"
+            src="https://assets.yad2.co.il/login/icon_publish.svg"
+            alt=""
+          /><span class="marketing-feature-text">פרסום מודעה</span>
+        </li>
+        <li class="marketing-feature">
+          <img
+            class="marketing-feature-image"
+            src="https://assets.yad2.co.il/login/icon_profile.svg"
+            alt=""
+          /><span class="marketing-feature-text">אזור אישי</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
