@@ -1,45 +1,47 @@
-<div class="info-contact-box">
-  <h3 class="additional-info-title">עוד באתר</h3>
-
-  <div class="info-content">
-    <div class="additional-info-buttons">
-      <button
-        (click)="onCategoryButtonClicked('realEstate')"
-        class="additional-info-btn"
-        [ngClass]="{ 'active-btn': activeCategory === 'realEstate' }"
-      >
-        נדלן
-      </button>
-
-      <button
-        (click)="onCategoryButtonClicked('cars')"
-        class="additional-info-btn"
-        [ngClass]="{ 'active-btn': activeCategory === 'cars' }"
-      >
-        רכב
-      </button>
-
-      <button
-        (click)="onCategoryButtonClicked('yad2')"
-        class="additional-info-btn"
-        [ngClass]="{ 'active-btn': activeCategory === 'yad2' }"
-      >
-        יד שנייה
-      </button>
-
-      <button
-        (click)="onCategoryButtonClicked('needed')"
-        class="additional-info-btn"
-        [ngClass]="{ 'active-btn': activeCategory === 'needed' }"
-      >
-        דרושים IL
-      </button>
+<div class="container">
+  <div class="site-categories">
+    <h3 class="additional-info-title">עוד באתר</h3>
+  
+    <div class="info-content">
+      <div class="additional-info-buttons">
+        <button
+          (click)="onCategoryButtonClicked('realEstate')"
+          class="additional-info-btn"
+          [ngClass]="{ 'active-btn': activeCategory === 'realEstate' }"
+        >
+          נדלן
+        </button>
+  
+        <button
+          (click)="onCategoryButtonClicked('cars')"
+          class="additional-info-btn"
+          [ngClass]="{ 'active-btn': activeCategory === 'cars' }"
+        >
+          רכב
+        </button>
+  
+        <button
+          (click)="onCategoryButtonClicked('yad2')"
+          class="additional-info-btn"
+          [ngClass]="{ 'active-btn': activeCategory === 'yad2' }"
+        >
+          יד שנייה
+        </button>
+  
+        <button
+          (click)="onCategoryButtonClicked('needed')"
+          class="additional-info-btn"
+          [ngClass]="{ 'active-btn': activeCategory === 'needed' }"
+        >
+          דרושים IL
+        </button>
+      </div>
+  
+      <app-additional-info-table
+        [chosenCategory]="activeCategory"
+      ></app-additional-info-table>
     </div>
-
-    <app-additional-info-table
-      [chosenCategory]="activeCategory"
-    ></app-additional-info-table>
   </div>
-
+  
   <app-contact-us></app-contact-us>
 </div>

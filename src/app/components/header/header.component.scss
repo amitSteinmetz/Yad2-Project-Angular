@@ -57,6 +57,14 @@
     display: none;
   }
 
+  .user-profile .user-profile-options {
+    display: none;
+  }
+
+  .user-profile:hover:has(.user-profile-option:hover) {
+    background-color: white;
+  }
+
   .post-ad:hover {
     background-color: rgb(255, 250, 245);
   }
@@ -122,11 +130,10 @@
       }
     }
 
-    .user-profile,
-    .post-ad {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
+    .user-profile {
+      position: relative;
+      min-height: inherit;
+      padding: 5px 20px;
 
       .user-profile-title {
         margin-right: 5px;
@@ -141,17 +148,54 @@
         justify-content: center;
         align-items: center;
         border: 1px solid rgb(204, 204, 204);
+        cursor: pointer;
 
         svg {
           font-size: 25px;
           color: #363636;
         }
       }
+
+      .user-profile-options {
+        display: block;
+        position: absolute;
+        top: 64px;
+        right: -20px;
+        list-style: none;
+        width: 200px;
+        height: auto;
+        padding: 0;
+        background-color: white;
+        opacity: 0.96;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+
+        .user-profile-option {
+          padding: 1rem 20px 1rem 30px;
+          display: flex;
+          align-items: center;
+          width: 100%;
+
+          .user-profile-option-svg {
+            font-size: 20px;
+          }
+
+          .user-profile-option-txt {
+            margin-right: 1rem;
+          }
+        }
+
+        .user-profile-option:hover {
+          background-color: rgb(248, 248, 248);
+        }
+      }
     }
 
-    .user-profile {
-      min-height: inherit;
-      padding: 5px 20px;
+    .user-profile,
+    .post-ad {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
     }
 
     .post-ad {

@@ -10,12 +10,13 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   font-family: "Rubik", sans-serif;
   color: #363636;
+  height: 164px;
   margin-top: 52px;
-  max-height: 216px;
   background-color: white;
 
   @media (min-width: 881px) {
-    max-height: none;
+    height: 225px;
+    margin: 0 0 0 2rem;
   }
 }
 
