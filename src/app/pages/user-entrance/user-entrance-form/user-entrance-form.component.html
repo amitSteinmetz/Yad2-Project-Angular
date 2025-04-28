@@ -1,0 +1,81 @@
+<form [formGroup]="form" class="user-entrance-form">
+  <div class="form-field">
+    <label for="email">מייל</label>
+
+    <input
+      type="email"
+      placeholder="yourmail@email.co.il"
+      formControlName="email"
+      required
+    />
+    <i class="fas fa-xmark" (click)="clearInputValue('email')"></i>
+  </div>
+
+  <div class="form-field">
+    <label class="last-label" for="password">סיסמה</label>
+
+    <input
+      class="password-input"
+      [type]="showInputContent.password ? 'text' : 'password'"
+      placeholder="הקלדת סיסמה"
+      formControlName="password"
+      (focus)="onInputGotFocus('password')"
+      (blur)="onInputLostFocus('password')"
+      required
+    />
+
+    <i
+      class="far"
+      (click)="toggleInputContent('password')"
+      [ngClass]="showInputContent.password ? 'fa-eye-slash' : 'fa-eye'"
+    ></i>
+
+    <div
+      class="password-instructions-modal"
+      *ngIf="isInputFocused['password'] && !isLoginEntrance"
+    >
+      <h4 class="password-instructions-title">סיסמה צריכה לכלול:</h4>
+
+      <ul class="password-instructions-list">
+        <li class="password-instruction">
+          <div class="password-instruction-outer-circle">
+            <div class="password-instruction-inner-circle"></div>
+          </div>
+          8 - 20 תווים
+        </li>
+        <li class="password-instruction">
+          <div class="password-instruction-outer-circle">
+            <div class="password-instruction-inner-circle"></div>
+          </div>
+          אותיות באנגלית ומספרים
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="form-field" *ngIf="!isLoginEntrance">
+    <label class="last-label" for="password">אימות סיסמה</label>
+
+    <input
+      class="password-input"
+      [type]="showInputContent.confirmPassword ? 'text' : 'password'"
+      placeholder="הקלדת סיסמה"
+      formControlName="confirmPassword"
+      required
+    />
+
+    <i
+      class="far"
+      (click)="toggleInputContent('confirmPassword')"
+      [ngClass]="showInputContent.confirmPassword ? 'fa-eye-slash' : 'fa-eye'"
+    ></i>
+  </div>
+
+  <div class="forgot-password-container" *ngIf="isLoginEntrance">
+    <a class="forgot-password">שכחתי סיסמה</a>
+  </div>
+
+  <button type="submit" class="form-button">
+    {{ isLoginEntrance ? "התחברות" : "המשך" }}
+  </button>
+</form>
